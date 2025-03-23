@@ -9,7 +9,8 @@ import os
 load_dotenv()
 
 # Now you can access your API key from the environment
-api_key = os.getenv("LANGCHAIN_API_KEY")
+api_key = os.getenv("LANGCHAIN_API_KEY",
+                    "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")
 
 # Langsmith Tracking
 os.environ["LANGCHAIN_API_KEY"] = api_key
